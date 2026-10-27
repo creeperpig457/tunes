@@ -1,0 +1,24 @@
+name: Tunes
+options:
+  bundleIdPrefix: com.local
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Tunes:
+    type: application
+    platform: iOS
+    sources: [Tunes]
+    info:
+      path: Tunes/Info.plist
+      properties:
+        CFBundleDisplayName: Tunes
+        UILaunchScreen: {}
+        UIBackgroundModes: [audio]
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.local.tunes
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
